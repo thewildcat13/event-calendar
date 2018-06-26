@@ -1,4 +1,4 @@
 export default {
-	email: "test@email.com",
+    email: "test@email.com",
     pass: "test",
 }

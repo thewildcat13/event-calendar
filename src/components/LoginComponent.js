@@ -5,27 +5,27 @@ import '../styles/styles.css';
 
 class LoginComponent extends Component {
 
-	constructor(props) {
+    constructor(props) {
         super(props);
         this.state = {
-        	validationEmail: ""
+            validationEmail: ""
         };
     }
 
     handleLogin() {
-    	let email = document.getElementById("email");
-    	if(!email.checkValidity()) {
-    		this.setState({validationEmail: email.validationMessage});
-    		return false;
-    	}
+        let email = document.getElementById("email");
+        if(!email.checkValidity()) {
+            this.setState({validationEmail: email.validationMessage});
+            return false;
+        }
 
-    	localStorage.setItem("email", this.refs.email.value);
-    	localStorage.setItem("pass", this.refs.pass.value);
-    	window.location.reload();
+        localStorage.setItem("email", this.refs.email.value);
+        localStorage.setItem("pass", this.refs.pass.value);
+        window.location.reload();
     }
 
     render() {
-    	if(checkAuth()) { return <Redirect to={'/calendar'} /> }
+        if(checkAuth()) { return <Redirect to={'/calendar'} /> }
 
         return <Fragment>
             <nav class="navbar navbar-inverse bg-inverse">

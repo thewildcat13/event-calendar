@@ -4,24 +4,24 @@ import '../styles/styles.css';
 
 class DayComponent extends Component {
 
-	constructor(props) {
+    constructor(props) {
         super(props);
         this.state = {
-        	show: false
+            show: false
         };
     }
 
-	handleOpenEvent() {
-		this.setState({
+    handleOpenEvent() {
+        this.setState({
             show: true
         })
-	}
+    }
 
-	handleCloseEvent() {
-		this.setState({
+    handleCloseEvent() {
+        this.setState({
             show: false
         })
-	}
+    }
 
     saveEvent(value) {
         this.setState({
@@ -36,7 +36,7 @@ class DayComponent extends Component {
     }
 
     render() {
-    	let display = this.state.show ? 'block' : 'none';
+        let display = this.state.show ? 'block' : 'none';
         return <Fragment>
             <div className="day" style={this.state.event? {backgroundColor: '#b9f6ca'} : null}
                  onClick={this.handleOpenEvent.bind(this)}>{this.props.day}</div>
@@ -51,10 +51,10 @@ class DayComponent extends Component {
                        save={this.saveEvent.bind(this)}
                        remove={this.removeEvent.bind(this)}
                 />
-            : null}
+                : null}
 
 
-				
+
         </Fragment>
     }
 }

@@ -6,10 +6,9 @@ import Login from './components/LoginComponent';
 import Calendar from './components/CalendarComponent';
 
 ReactDOM.render(<Router>
-		<div>
-			<Route exact path="/" component={App} />
-	        <Route path="/login" component={Login} />
-	        <Route path="/calendar" component={Calendar} />
-		</div>
-    </Router>, document.getElementById('root'));
-    
+	<div>
+		<Route exact path="/" component={App} />
+		<Route path="/login" component={Login} />
+		<Route path="/calendar" component={Calendar} />
+	</div>
+</Router>, document.getElementById('root'));
