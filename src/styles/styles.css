@@ -1,0 +1,35 @@
+.nav-link {
+    color: #fff;
+}
+
+.login-form {
+    margin-top: 40%;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+.login-btn {
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.day {
+	display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    cursor: pointer;
+    background-color: #eee;
+    color: #fff;
+    font-size: 28px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.event {
+    width: 100%;
+    padding-left: 15px;
+}
